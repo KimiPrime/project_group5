@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/basc.css" />
+    <link rel="stylesheet" href="../css/rest.css" />
+    <link rel="stylesheet" href="../css/add_partner_account.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="modal-overlay show" id="partnerModal">
+      <div class="modal">
+        <!-- Bên trái -->
+        <div class="modal-left">
+          <h1>Thêm đối tác</h1>
+          <h3>Thông tin chung</h3>
+          <p class="sub">Cập nhật thông tin chung về đối tác</p>
+        </div>
+
+        <!-- Vạch ngăn -->
+        <div class="modal-divider"></div>
+
+        <!-- Bên phải -->
+        <div class="modal-right">
+          <div class="modal-header">
+            <span class="modal-close" onclick="closeModal()">x</span>
+          </div>
+
+          <div class="header">
+            <img
+              src="../assets/image/Avatar-1.png "
+              alt="Avatar"
+              class="avatar"
+            />
+            <div class="upload-box">
+              <div class="upload-content">
+                <img src="../assets/icon/upload-cloud.png" alt="upload" />
+                <p class="click">Click to upload</p>
+                <p>or drag and drop</p>
+              </div>
+              <p>SVG, PNG, JPG or GIF (max. 400×400px)</p>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="partner-name">Tên đối tác</label>
+            <input
+              type="text"
+              id="partner-name"
+              placeholder="Nhập tên đối tác"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="Address">Địa chỉ văn phòng</label>
+            <input type="text" id="Address" placeholder="Nhập địa chỉ" />
+          </div>
+
+          <div class="form-group">
+            <label for="website">Website</label>
+            <input
+              type="text"
+              id="website"
+              placeholder="Nhập địa chỉ website"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="hotline">Hotline</label>
+            <input type="text" id="hotline" placeholder="Nhập số điện thoại" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Nhập email đối tác" />
+          </div>
+          <div class="form-group">
+            <label for="specialized">Chuyên ngành</label>
+            <input type="text" id="specialized" placeholder="" />
+          </div>
+
+          <div class="modal-footer">
+            <button class="btn btn-cancel" onclick="closeModal()">Hủy</button>
+            <button class="btn btn-submit">Thêm đối tác</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function closeModal() {
+        document.getElementById("partnerModal").classList.remove("show");
+      }
+    </script>
+  </body>
+</html>

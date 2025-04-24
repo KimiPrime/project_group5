@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/delete.css" />
+    <link rel="stylesheet" href="../css/basc.css" />
+    <link rel="stylesheet" href="../css/rest.css" />
+    <style>
+      .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+      }
+
+      .overlay.show {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="openPopup()">Mở popup</button>
+
+    <div class="overlay" id="deletePopup">
+      <div class="popup">
+        <h3 class="popup-title">Xác nhận</h3>
+        <p class="popup-message">
+          Bạn có chắc chắn muốn xóa đối tác này không ?
+        </p>
+        <div class="popup-actions">
+          <button class="btn-cancel" onclick="closePopup()">Hủy</button>
+          <button class="btn-delete">Xóa đối tác</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function openPopup() {
+        document.getElementById("deletePopup").classList.add("show");
+      }
+
+      function closePopup() {
+        document.getElementById("deletePopup").classList.remove("show");
+      }
+
+      // Đóng popup khi click ra ngoài vùng popup
+      document
+        .getElementById("deletePopup")
+        .addEventListener("click", function (event) {
+          if (event.target === this) {
+            closePopup();
+          }
+        });
+    </script>
+  </body>
+</html>

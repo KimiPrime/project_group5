@@ -1,0 +1,368 @@
+.logo-university {
+    width: 143px;
+    height: 32px;
+  }
+  .body-container {
+    display: flex;
+  }
+  .body-left {
+    width: 279px;
+    height: calc(100vh - 36px);
+    padding: 24px;
+    border-right: 2px solid #e4e7ec;
+  }
+  .list-link {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    
+  }
+  .link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #344054;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .nav {
+    width: 279px;
+    height: 910px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .body-top-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+  }
+  .body-name-email {
+    width: 235px;
+    height: 40px;
+    border-top: 1px solid #e4e7ec;
+  }
+  .name-out {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .body-search {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 10px;
+  }
+  .icon-search {
+    position: relative;
+    left: 34px;
+  }
+  .iput-search {
+    padding-left: 34px;
+    width: 231px;
+    height: 44px;
+    border-radius: 8px;
+    border: 2px solid #cac2c2;
+  }
+  .icon {
+    color: #344054;
+    width: 24px;
+    height: 24px;
+  }
+  #icon-account {
+    color: #344054;
+  }
+  .body-bottom-nav{
+      padding-bottom: 24px ;
+  }
+  /* Css của home bên phải */
+  .body-right {
+    padding: 32px;
+    width: 100%;
+  }
+  
+  .title-body {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .header-title {
+    display: flex;
+    gap: 12px;
+  }
+  .title {
+    width: 291px;
+    height: 40px;
+    padding-top: 16px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0%;
+  }
+  .excel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 2px solid #c7c2c2;
+  }
+  .select {
+    width: 138px;
+    height: 40px;
+    gap: 8px;
+    padding-top: 10px;
+    padding-right: 16px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    border-radius: 8px;
+    border-width: 1px;
+  }
+  .btn-add-account{
+      width: 164px;
+  height: 40px;
+  border-radius: 8px;
+  width: 164;
+  height: 40;
+  gap: 8px;
+  padding: 10px 16px;
+  border-width: 1px;
+  background-color: #B54115;
+  color: #ffff;
+  }
+  .list-account{
+      padding-top: 24px;
+      display: flex;
+      gap: 36px;
+  }
+  .box-list {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+  }
+  .number-user{
+  width: 48px;
+  height: 32px;
+  font-size: 16px;
+  padding: 8px 2px;
+  border-radius: 16px;
+  background-color: #F2F4F7;
+  }
+  /* lọc và tìm kiếm */
+  .filter-search {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .filter {
+      display: flex;
+      gap: 12px;
+  }
+  .search-user {
+      display: flex;
+      align-items: center;
+      position: relative;
+      right: 10px;
+  }
+  .table-container {
+    background-color: #ffffff;
+    padding: 24px; 
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); 
+    overflow-x: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 1200px; 
+    font-size: 16px; 
+    height: auto;
+    min-height: 600px;
+  }
+  
+  .header-table {
+    background-color: #f3f4f6;
+    text-align: left;
+    font-weight: 700;
+    color: #1f2937;
+    padding: 16px 20px;
+    font-size: 16px;
+    border-bottom: 2px solid #d1d5db;
+  }
+  
+  .user-table td {
+    padding: 16px 20px;
+    font-size: 15px;
+    color: #374151;
+    border-bottom: 1px solid #e5e7eb;
+    vertical-align: middle;
+  }
+  
+  
+  .badge {
+    padding: 4px 10px;
+    border-radius: 9999px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+  }
+  
+  .sinhvien {
+    background-color: #d1fae5;
+    color: #065f46;
+  }
+  
+  .giangvien {
+    background-color: #fce7f3;
+    color: #9d174d;
+  }
+  
+  .nhatruong {
+    background-color: #fef9c3;
+    color: #92400e;
+  }
+  
+  .actions img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: transform 0.2s ease;
+  }
+  
+  .actions img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Container phân trang */
+  .pagination {
+    display: flex;
+    justify-content: space-between;     /* nút trước sang trái, info ở giữa, nút sau sang phải */
+    align-items: center;
+    margin-top: 16px;
+    padding: 12px 16px;
+    background-color: #ffffff;
+    
+  }
+  
+  /* Text hiện trang */
+  .page-info {
+    font-size: 14px;
+    color: #6b7280;
+  }
+  
+  /* Các nút phân trang */
+  .page-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #374151;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+  }
+  
+  .page-btn:hover:not(:disabled) {
+    background-color: #f3f4f6;
+    border-color: #cbd5e1;
+  }
+  
+  .page-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  /* Badge chuyên ngành */
+  .badge {
+    padding: 4px 8px;
+    border-radius: 9999px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+    margin: 2px 4px 2px 0;
+  }
+  
+  .cntt {
+    background-color: #fee2e2;
+    color: #b91c1c;
+  }
+  
+  .marketing {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+  }
+  
+  .design {
+    background-color: #e0e7ff;
+    color: #3730a3;
+  }
+  
+  .qtkd {
+    background-color: #fce7f3;
+    color: #be185d;
+  }
+  
+  .auto {
+    background-color: #ffedd5;
+    color: #c2410c;
+  }
+  /*popup xóa*/
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .overlay.show {
+    display: flex;
+  }
+  
+  .popup {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .popup-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .popup-message {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .popup-actions button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+  }
+  
+  .btn-cancel {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+  }
+  
+  .btn-delete {
+    background-color: #e74c3c;
+    color: white;
+    border: 1px solid #e74c3c;
+  }
+  
